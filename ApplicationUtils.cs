@@ -17,7 +17,7 @@ namespace DataTypeConverters
         private static readonly IDataType _bcdDataType = new DataTypeBCD();
         private static readonly IDataType _lbcdDataType = new DataTypeLBCD();
 
-        public static IDataType Converter(this DataType dataType)
+        public static IDataType GetConverter(this DataType dataType)
         {
             return dataType switch
             {
